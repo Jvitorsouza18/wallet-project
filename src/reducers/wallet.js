@@ -7,10 +7,15 @@ const INITIAL_STATE = {
 };
 
 function wallet(state = INITIAL_STATE, action) {
+  console.log(action.payload);
   switch (action.type) {
-  case 'CLICK_ADD_EXPENSE':
+  case 'REQUEST_CURRENCIES':
     return {
       ...state,
+    };
+  case 'GET_CURRENCIES':
+    return {
+      currencies: action.payload,
     };
   default:
     return state;
