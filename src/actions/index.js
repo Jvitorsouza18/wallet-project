@@ -1,13 +1,13 @@
 // Coloque aqui suas actions
-export const GET_USER = 'GET_USER';
-export const REQUEST_CURRENCIES = 'REQUEST_CURRENCIES';
-export const GET_CURRENCIES = 'GET_CURRENCIES';
+const GET_USER = 'GET_USER';
+const REQUEST_CURRENCIES = 'REQUEST_CURRENCIES';
+const GET_CURRENCIES = 'GET_CURRENCIES';
+const GET_EXPENSES = 'GET_EXPENSES';
 
 export const getUser = (payload) => ({ type: GET_USER, payload });
 export const requestCurrencies = () => ({ type: REQUEST_CURRENCIES });
 export const getCurrencies = (data, payload) => ({ type: GET_CURRENCIES, data, payload });
-
-// const USDT = 'USDT';
+export const getExpenses = (payload) => ({ type: GET_EXPENSES, payload });
 
 export function fetchAPI() {
   return async (dispatch) => {
