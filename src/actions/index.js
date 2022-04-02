@@ -3,6 +3,7 @@ const GET_USER = 'GET_USER';
 const REQUEST_CURRENCIES = 'REQUEST_CURRENCIES';
 const GET_CURRENCIES = 'GET_CURRENCIES';
 const GET_EXPENSES = 'GET_EXPENSES';
+const REMOVE_EXPENSE = 'REMOVE_EXPENSE';
 
 export const getUser = (payload) => ({ type: GET_USER, payload });
 export const requestCurrencies = () => ({ type: REQUEST_CURRENCIES });
@@ -23,3 +24,8 @@ export function fetchAPI() {
     }
   };
 }
+
+export const removeTable = (payload) => ({
+  type: REMOVE_EXPENSE,
+  payload,
+});
