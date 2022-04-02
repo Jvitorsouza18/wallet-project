@@ -18,7 +18,7 @@ class Table extends React.Component {
             <th>Câmbio utilizado</th>
             <th>Valor convertido</th>
             <th>Moeda de conversão</th>
-            <th>Editar/Excluir</th>
+            <th>Excluir</th>
           </tr>
         </thead>
         <tbody>
@@ -38,12 +38,6 @@ class Table extends React.Component {
                 </td>
                 <td>Real</td>
                 <td>
-                  <button
-                    data-testid="edit-btn"
-                    type="button"
-                  >
-                    Editar
-                  </button>
                   <button
                     data-testid="delete-btn"
                     type="button"
